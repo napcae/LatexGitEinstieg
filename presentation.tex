@@ -1,0 +1,82 @@
+%%Documentclass definition
+\documentclass[xcolor=x11names,compress]{beamer} %beamer main class
+%\documentclass[handout]{beamer} %for handouts
+
+%%Package defintion
+\usepackage{pgfpages}  %Printing multiple pages on one 
+\usepackage{graphicx}  %Package 
+\usepackage{tikz}      %Package for drawing
+\usepackage[utf8]{inputenc} 
+\usepackage[ngerman]{babel}
+\usetikzlibrary{decorations.fractals}
+
+%%
+%% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\useoutertheme[subsection=false,shadow]{miniframes}
+\useinnertheme{default}
+\setbeamertemplate{footline}{%
+\begin{beamercolorbox}{section in head/foot}
+    \color{gray}\vskip2pt~  \insertshorttitle\hfill\insertpagenumber{} %
+    of \insertpresentationendpage{} ~\vskip2pt
+\end{beamercolorbox}
+}
+\usefonttheme{serif}
+\usepackage{palatino}
+
+\setbeamerfont{title like}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+
+\setbeamercolor*{lower separation line head}{bg=DeepSkyBlue4} 
+\setbeamercolor*{normal text}{fg=black,bg=white} 
+\setbeamercolor*{alerted text}{fg=red} 
+\setbeamercolor*{example text}{fg=black} 
+\setbeamercolor*{structure}{fg=black} 
+ 
+\setbeamercolor*{palette tertiary}{fg=black,bg=black!10} 
+\setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
+
+\setbeamertemplate{note page}[plain]
+
+
+\renewcommand{\(}{\begin{columns}}
+\renewcommand{\)}{\end{columns}}
+\newcommand{\<}[1]{\begin{column}{#1}}
+\renewcommand{\>}{\end{column}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+
+
+\title[Make a LaTeX presentation using Beamer]{Introduction  to Beamer\\How to make a presentation with LaTeX?}
+\author{Chi Trung Nguyen}
+\institute{HfTL}
+\date{15. März 2014}
+
+
+\begin{document}
+
+
+
+\section{Einführung}	
+\subsection{asd}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Einführung}
+\subsection{asd}
+\begin{frame}{Einf"uhrung}
+Eine kurze Einführung
+\end{frame}
+
+
+\subsection{asd}
+\begin{frame}{Einf"uhrung}
+Eine kurze Einführung
+\end{frame}
+
+
+\subsection{asd}
+\begin{frame}{Einf"uhrung}
+Eine kurze Einführung
+\end{frame}
+\end{document}
