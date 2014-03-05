@@ -6,9 +6,10 @@
 \usepackage{pgfpages}  %Printing multiple pages on one 
 \usepackage{graphicx}  %Package 
 \usepackage{tikz}      %Package for drawing
+\usepackage{listings}
+%\usepackage{hyperref}  %urls
 \usepackage[utf8]{inputenc} 
 \usepackage[ngerman]{babel}
-\usetikzlibrary{decorations.fractals}
 
 %%
 %% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -37,7 +38,6 @@
 
 \setbeamertemplate{note page}[plain]
 
-
 \renewcommand{\(}{\begin{columns}}
 \renewcommand{\)}{\end{columns}}
 \newcommand{\<}[1]{\begin{column}{#1}}
@@ -45,38 +45,59 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 
-
-\title[Make a LaTeX presentation using Beamer]{Introduction  to Beamer\\How to make a presentation with LaTeX?}
+\title[Latex Beamer Einführung]{Einführung in Beamer\\Wie man eine Präsentation mit \LaTeX \,erstellt}
 \author{Chi Trung Nguyen}
 \institute{HfTL}
-\date{15. März 2014}
-
+\date{5. März 2014}
 
 \begin{document}
 
+	\begin{frame}
+		\titlepage
+	\end{frame}
 
+\section{Warum \LaTeX\, Beamer?}
+	\subsection{Vorteile}
+		\begin{frame}{Vorteile}
+			\begin{itemize}
+				\item Wiederwendung von bereits erstellten Material
+				\pause
+				\item Versioncontrol
+			\end{itemize}
 
-\section{Einführung}	
-\subsection{asd}
-\begin{frame}
-\titlepage
-\end{frame}
+		\end{frame}
 
-\section{Einführung}
-\subsection{asd}
-\begin{frame}{Einf"uhrung}
-Eine kurze Einführung
-\end{frame}
+	\subsection{Nachteile}
+		\begin{frame}{Nachteile}
+			\begin{itemize}
+				\item Zeitintensiv zu erlernen
+				\pause
+				\item Designs vorgegeben
+			\end{itemize}
+		\end{frame}
 
+\section{Installation}
+	\subsection{Itemize}
+		\begin{frame}
+			\item Windows: MikTex
+			\pause
+			\item Mac: MacTex
+		\end{frame}
 
-\subsection{asd}
-\begin{frame}{Einf"uhrung}
-Eine kurze Einführung
-\end{frame}
+\section{Basics}
+	\subsection{Itemize}
+		\begin{frame}
+		\href{http://s.ctnguyen.net/latex_hftl}{http://s.ctnguyen.net/latex\_hftl}
+		\end{frame}
 
+\section{?}
+	\subsection{asd}
+		\begin{frame}
+			\href{http://s.ctnguyen.net/latex_hftl}{http://s.ctnguyen.net/latex\_hftl}
+		\end{frame}
 
-\subsection{asd}
-\begin{frame}{Einf"uhrung}
-Eine kurze Einführung
-\end{frame}
+	\subsection{asd}
+		\begin{frame}
+			\huge{Fragen?}
+		\end{frame}
 \end{document}
