@@ -1,0 +1,40 @@
+% das Papierformat zuerst
+\documentclass[a4paper, 11pt]{article}
+
+% deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+
+% wegen deutschen Umlauten
+\usepackage[ansinew]{inputenc}
+
+% wir wollen auf jeder Seite eine Ueberschrift
+\pagestyle{headings}
+
+% hier beginnt das Dokument
+\begin{document}
+
+% Inhaltsverzeichnis anzeigen
+\tableofcontents
+
+% Kapitel soll auf naechster Seite beginnen
+\newpage
+
+% Kapitelueberschrift
+\section{Einleitung}
+
+% Ueberschrift eines Abschnittes
+\subsection{Motivation}
+
+Ein bekannter Stolperstein bei Latex sind die deutschen Umlaute wie: ä, ö, ü,
+Ä, Ö, Ü und natürlich auch das ß.
+
+% Kapitel soll auf naechster Seite beginnen
+\newpage
+
+% Kapitelueberschrift
+\section{Theoretische Betrachtungen}
+
+Dies ist ein Satz.
+
+% das ist wohl jetzt das Ende des Dokumentes
+\end{document}
